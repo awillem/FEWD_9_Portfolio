@@ -7,43 +7,304 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Emma Willmann</title>
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <h1>Emma Willmann</h1>
     <hr>
     <h3>FULL STACK WEB DEVELOPER</h3>
-    <svg xmlns="http://www.w3.org/2000/svg" class="left" viewBox="0 0 480 480">
+    <svg xmlns="http://www.w3.org/2000/svg" class="heading" viewBox="0 0 480 480">
       <path
         d="M363.324 228.672l-224-224c-4.608-4.576-11.424-5.92-17.44-3.456-5.984 2.464-9.888 8.32-9.888 14.784v118.08c0 4.384 1.824 8.608 4.992 11.616L216.7 240l-99.712 94.272c-3.168 3.04-4.992 7.232-4.992 11.648V464c0 6.464 3.904 12.32 9.888 14.784 1.984.8 4.064 1.216 6.112 1.216 4.16 0 8.256-1.632 11.328-4.672l224-224c6.24-6.272 6.24-16.384 0-22.656z" />
     </svg>
   </header>
 
+  <nav id="navbar">
+    <div class="container clearfix">
+      <h2 class="logo">Emma Willmann</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <main>
     <div class="container">
-      <div class="heading">
-        <h2>Projects</h2>
-      </div>
-      <div class="projects">
-        <svg xmlns="http://www.w3.org/2000/svg" class="left" viewBox="0 0 480 480">
-          <path
-            d="M363.324 228.672l-224-224c-4.608-4.576-11.424-5.92-17.44-3.456-5.984 2.464-9.888 8.32-9.888 14.784v118.08c0 4.384 1.824 8.608 4.992 11.616L216.7 240l-99.712 94.272c-3.168 3.04-4.992 7.232-4.992 11.648V464c0 6.464 3.904 12.32 9.888 14.784 1.984.8 4.064 1.216 6.112 1.216 4.16 0 8.256-1.632 11.328-4.672l224-224c6.24-6.272 6.24-16.384 0-22.656z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="right" viewBox="0 0 480 480">
-          <path
-            d="M363.324 228.672l-224-224c-4.608-4.576-11.424-5.92-17.44-3.456-5.984 2.464-9.888 8.32-9.888 14.784v118.08c0 4.384 1.824 8.608 4.992 11.616L216.7 240l-99.712 94.272c-3.168 3.04-4.992 7.232-4.992 11.648V464c0 6.464 3.904 12.32 9.888 14.784 1.984.8 4.064 1.216 6.112 1.216 4.16 0 8.256-1.632 11.328-4.672l224-224c6.24-6.272 6.24-16.384 0-22.656z" />
-        </svg>
+
+      <!-- Projects -->
+
+      <div id="projects">
+        <div class="heading">
+          <h2>Projects</h2>
+        </div>
+
+        <!-- Project Navigation Arrows -->
+        <div class="projects">
+          <svg xmlns="http://www.w3.org/2000/svg" class="left" viewBox="0 0 480 480">
+            <path
+              d="M363.324 228.672l-224-224c-4.608-4.576-11.424-5.92-17.44-3.456-5.984 2.464-9.888 8.32-9.888 14.784v118.08c0 4.384 1.824 8.608 4.992 11.616L216.7 240l-99.712 94.272c-3.168 3.04-4.992 7.232-4.992 11.648V464c0 6.464 3.904 12.32 9.888 14.784 1.984.8 4.064 1.216 6.112 1.216 4.16 0 8.256-1.632 11.328-4.672l224-224c6.24-6.272 6.24-16.384 0-22.656z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="right" viewBox="0 0 480 480">
+            <path
+              d="M363.324 228.672l-224-224c-4.608-4.576-11.424-5.92-17.44-3.456-5.984 2.464-9.888 8.32-9.888 14.784v118.08c0 4.384 1.824 8.608 4.992 11.616L216.7 240l-99.712 94.272c-3.168 3.04-4.992 7.232-4.992 11.648V464c0 6.464 3.904 12.32 9.888 14.784 1.984.8 4.064 1.216 6.112 1.216 4.16 0 8.256-1.632 11.328-4.672l224-224c6.24-6.272 6.24-16.384 0-22.656z" />
+          </svg>
+
+          <!-- Projects  Cards-->
+
+          <div class="card hidden-left">
+            <div class="title">First</div>
+            <div class="content">
+              <img src="images/projects/proj1_main.png" alt="Full Stack App">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nam laborum quod, enim architecto
+                necessitatibus. </p>
+            </div>
+            <div class="project-skills">
+              <ul>
+                <li><i class="devicon-javascript-plain"></i></li>
+                <li><i class="devicon-html5-plain"></i></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card visible">
+            <div class="title">A Random Quote Generator</div>
+            <div class="content">
+              <img src="images/projects/proj1_main.png" alt="Full Stack App">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nam laborum quod, enim architecto
+                necessitatibus. </p>
+            </div>
+            <div class="project-skills">
+              <ul>
+                <li><i class="devicon-javascript-plain"></i></li>
+                <li><i class="devicon-html5-plain"></i></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card visible">
+            <div class="title">Course Manager - Full Stack</div>
+            <div class="content">
+              <img src="images/projects/proj10_main.png" alt="Full Stack App">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nam laborum quod, enim architecto
+                necessitatibus. </p>
+            </div>
+            <div class="project-skills">
+              <ul>
+                <li><i class="devicon-react-original"></i></li>
+                <li><i class="devicon-nodejs-plain"></i></li>
+                <li><i class="devicon-express-original"></i></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card visible">
+            <div class="title">Library Manager</div>
+            <div class="content">
+              <img src="images/projects/proj8_main.png" alt="Full Stack App">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nam laborum quod, enim architecto
+                necessitatibus. </p>
+            </div>
+            <div class="project-skills">
+              <ul>
+                <li><i class="devicon-express-original"></i></li>
+                <li><i class="devicon-nodejs-plain"></i></li>
+                <li><i class="devicon-sequelize-plain"></i></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card hidden-right">
+            <div class="title">Last</div>
+            <div class="content">
+              <img src="images/projects/proj1_main.png" alt="Full Stack App">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nam laborum quod, enim architecto
+                necessitatibus. </p>
+            </div>
+            <div class="project-skills">
+              <ul>
+                <li><i class="devicon-javascript-plain"></i></li>
+                <li><i class="devicon-html5-plain"></i></li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
       </div>
 
-      <div class="heading">
-        <h2>Skills and Training</h2>
+      <!-- SKILLS -->
+
+      <div id="skills">
+        <div class="heading">
+          <h2>Skills and Training</h2>
+        </div>
+        <div class="skills">
+
+          <div class="card" id="skills-list">
+            <div class="title">Skills</div>
+            <div class="content">
+              <ul>
+                <li class="tooltip"><i class="devicon-express-original"></i><span class="tooltip-text">Express.js</span>
+                </li>
+                <li class="tooltip"><i class="devicon-nodejs-plain"></i><span class="tooltip-text">Node.js</span>
+                </li>
+                <li class="tooltip"><i class="devicon-sequelize-plain"></i><span class="tooltip-text">Sequelize</span>
+                </li>
+                <li class="tooltip"><i class="devicon-react-original"></i><span class="tooltip-text">React</span>
+                </li>
+              </ul>
+              <ul>
+                <li class="tooltip"><i class="devicon-html5-plain"></i><span class="tooltip-text">HTML</span>
+                </li>
+                <li class="tooltip"><i class="devicon-css3-plain"></i><span class="tooltip-text">CSS</span>
+                </li>
+                <li class="tooltip"><i class="devicon-javascript-plain"></i><span class="tooltip-text">JavaScript</span>
+                </li>
+                <li class="tooltip"><i class="devicon-sass-original"></i><span class="tooltip-text">Sass</span>
+                </li>
+              </ul>
+              <ul>
+                <li class="tooltip"><i class="devicon-github-plain"></i><span class="tooltip-text">GitHub</span>
+                </li>
+                <li class="tooltip"><i class="devicon-jquery-plain"></i><span class="tooltip-text">jQuery</span>
+                </li>
+                <li class="tooltip"><i class="devicon-mongodb-plain"></i><span class="tooltip-text">MongoDB</span>
+                </li>
+              </ul>
+              <ul>
+                <li class="tooltip"><i class="devicon-trello-plain"></i><span class="tooltip-text">Trello</span>
+                </li>
+                <li class="tooltip"><i class="devicon-visualstudio-plain"></i><span class="tooltip-text">Visual Studio
+                    Code</span>
+                </li>
+                <li class="tooltip"><i class="devicon-slack-plain"></i><span class="tooltip-text">Slack</span>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="card" id="responsive">
+            <div class="title">Responsive Web Design</div>
+            <div class="content">
+              <img src="images/responsive_screens_directory.png" alt="Full Stack App">
+
+            </div>
+          </div>
+
+          <div class="card" id="training">
+            <div class="title">Training</div>
+            <div class="content">
+              <div>
+                <h3>Full Stack Javascript Techdegree</h3>
+                <a href="https://www.credential.net/dh1lfxch" target="_blank"><svg class="certificate-svg"
+                    viewBox="0 0 512 512" height="512" width="512" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M454.5 40.178h-397c-31.706 0-57.5 25.794-57.5 57.5v268.18c0 31.706 25.794 57.5 57.5 57.5h228.667a7.5 7.5 0 000-15H57.5c-23.435 0-42.5-19.065-42.5-42.5V97.678c0-23.435 19.065-42.5 42.5-42.5h397c23.435 0 42.5 19.065 42.5 42.5v268.18c0 23.435-19.065 42.5-42.5 42.5h-5V386.48c13.483-12.48 22.047-30.184 22.462-49.864.025-.249.038-.502.038-.758v-208.18a7.5 7.5 0 00-7.5-7.5c-17.92 0-32.5-14.58-32.5-32.5a7.5 7.5 0 00-7.5-7.5h-337a7.5 7.5 0 00-7.5 7.5c0 17.92-14.58 32.5-32.5 32.5a7.5 7.5 0 00-7.5 7.5v208.18a7.5 7.5 0 007.5 7.5c17.92 0 32.5 14.58 32.5 32.5a7.5 7.5 0 007.5 7.5h263.844a69.844 69.844 0 003.156 3.121v21.879h-40.333a7.5 7.5 0 000 15H354.5v35.952a12.42 12.42 0 005.928 10.633 12.418 12.418 0 0012.162.547L402 455.785l29.411 14.706a12.503 12.503 0 005.597 1.331c2.276 0 4.544-.63 6.564-1.878a12.42 12.42 0 005.928-10.633v-35.952h5c31.706 0 57.5-25.794 57.5-57.5V97.678c0-31.705-25.794-57.5-57.5-57.5zM402 390.123c-30.327 0-55-24.673-55-55s24.673-55 55-55c30.325 0 54.996 24.669 55 54.993l-.005.149c-.006.168-.011.335-.013.504l.001.026c-.363 30.017-24.881 54.328-54.983 54.328zM94.409 368.358C91.191 348.161 75.197 332.167 55 328.949V134.587c20.197-3.217 36.191-19.211 39.409-39.409h323.183c3.217 20.197 19.211 36.191 39.409 39.409V291.9c-12.828-16.288-32.706-26.777-55-26.777-38.598 0-70 31.402-70 70a69.564 69.564 0 008.408 33.235zM434.5 455.265l-26.91-13.455a12.554 12.554 0 00-11.18 0l-26.91 13.455v-39.396-.01V397.093c9.719 5.118 20.773 8.031 32.5 8.031s22.781-2.913 32.5-8.031z" />
+                    <path
+                      d="M108 164.268h296a7.5 7.5 0 000-15H108a7.5 7.5 0 000 15zM108 214.268h79a7.5 7.5 0 000-15h-79a7.5 7.5 0 000 15zM404 199.268H214a7.5 7.5 0 000 15h190a7.5 7.5 0 000-15zM314.167 249.268H108a7.5 7.5 0 000 15h206.167a7.5 7.5 0 000-15zM256 299.268H108a7.5 7.5 0 000 15h148a7.5 7.5 0 000-15z" />
+                  </svg></a>
+              </div>
+              <div>
+                <h3>Front End Web Development Techdegree <span> In progress</span></h3>
+                <a href="#" target="_blank"><svg class="certificate-svg" viewBox="0 0 512 512" height="512" width="512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M454.5 40.178h-397c-31.706 0-57.5 25.794-57.5 57.5v268.18c0 31.706 25.794 57.5 57.5 57.5h228.667a7.5 7.5 0 000-15H57.5c-23.435 0-42.5-19.065-42.5-42.5V97.678c0-23.435 19.065-42.5 42.5-42.5h397c23.435 0 42.5 19.065 42.5 42.5v268.18c0 23.435-19.065 42.5-42.5 42.5h-5V386.48c13.483-12.48 22.047-30.184 22.462-49.864.025-.249.038-.502.038-.758v-208.18a7.5 7.5 0 00-7.5-7.5c-17.92 0-32.5-14.58-32.5-32.5a7.5 7.5 0 00-7.5-7.5h-337a7.5 7.5 0 00-7.5 7.5c0 17.92-14.58 32.5-32.5 32.5a7.5 7.5 0 00-7.5 7.5v208.18a7.5 7.5 0 007.5 7.5c17.92 0 32.5 14.58 32.5 32.5a7.5 7.5 0 007.5 7.5h263.844a69.844 69.844 0 003.156 3.121v21.879h-40.333a7.5 7.5 0 000 15H354.5v35.952a12.42 12.42 0 005.928 10.633 12.418 12.418 0 0012.162.547L402 455.785l29.411 14.706a12.503 12.503 0 005.597 1.331c2.276 0 4.544-.63 6.564-1.878a12.42 12.42 0 005.928-10.633v-35.952h5c31.706 0 57.5-25.794 57.5-57.5V97.678c0-31.705-25.794-57.5-57.5-57.5zM402 390.123c-30.327 0-55-24.673-55-55s24.673-55 55-55c30.325 0 54.996 24.669 55 54.993l-.005.149c-.006.168-.011.335-.013.504l.001.026c-.363 30.017-24.881 54.328-54.983 54.328zM94.409 368.358C91.191 348.161 75.197 332.167 55 328.949V134.587c20.197-3.217 36.191-19.211 39.409-39.409h323.183c3.217 20.197 19.211 36.191 39.409 39.409V291.9c-12.828-16.288-32.706-26.777-55-26.777-38.598 0-70 31.402-70 70a69.564 69.564 0 008.408 33.235zM434.5 455.265l-26.91-13.455a12.554 12.554 0 00-11.18 0l-26.91 13.455v-39.396-.01V397.093c9.719 5.118 20.773 8.031 32.5 8.031s22.781-2.913 32.5-8.031z" />
+                    <path
+                      d="M108 164.268h296a7.5 7.5 0 000-15H108a7.5 7.5 0 000 15zM108 214.268h79a7.5 7.5 0 000-15h-79a7.5 7.5 0 000 15zM404 199.268H214a7.5 7.5 0 000 15h190a7.5 7.5 0 000-15zM314.167 249.268H108a7.5 7.5 0 000 15h206.167a7.5 7.5 0 000-15zM256 299.268H108a7.5 7.5 0 000 15h148a7.5 7.5 0 000-15z" />
+                  </svg></a>
+              </div>
+              <a href="http://teamtreehouse.com/techdegree">TreeHouse Techdegrees</a>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div class="projects">
-        <h4>Skills go here</h4>
+
+      <!-- ABOUT -->
+      <div class="heading" id="about">
+        <h2>About Me</h2>
       </div>
+      <div class="about">
+        <div class="me">
+          <img src="images/me.jpg" alt="Emma">
+        </div>
+        <div class="about-me">
+          <p>I graduated from high school in 1999. Just after that, I picked up my first book on HTML, <em>HTML for
+              Dummies.</em> I loved what I learned, but had no other education in web development and no opportunities
+            to do anything with my skills. I followed other avenues, and eventually received my Associates Degree in
+            Accounting which I now use working in the payroll industry. </p>
+          <p>Over the years, my interest in web development was always there, so I occassionally picked up new books and
+            learned a little more. In 2015, I found <a href="http://teamtreehouse.com">Treehouse</a> and started taking
+            some of their courses. I also took a few other courses through other online platforms, but in the summer of
+            2018, I came back to Treehouse and jumped in with both feet, enrolling in their Full Stack Javascript
+            Techdegree</p>
+          <p>The Treehouse Techdegree really helped me focus my learning. There was a great support system in their use
+            of Slack, where they have a community of other students and moderators where great discussion happens. For
+            me, the best part of this techdegree were the unit projects. After completing a handful of courses, there is
+            a project that students complete on their own. Being able to complete these projects really helped me
+            understand what could be accomplished while coding.</p>
+          <p>When I completed the techdegree in November of 2018, I was asked to stay on as a moderator. Since then, I
+            have helped other students with their javascript questions and reviewed their projects. Most recently, I
+            began going through the Front End Web Development Techdegree, which I will be completing soon.</p>
+        </div>
+      </div>
+
+
+      <!-- CONTACT -->
+      <div class="heading" id="contact">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact">
+        <p>Interested in working with me? I would love a chance to discuss how we might collaborate. </p>
+        <div class="email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395 395">
+            <path
+              d="M395 320.089V74.911L258.806 197.5zM197.5 252.682l-38.884-35L22.421 340.271h350.158L236.384 217.682zM372.579 54.729H22.421L197.5 212.318zM0 74.911v245.178L136.194 197.5z" />
+          </svg>
+          <p> Emma@WhateverByEmma.com</p>
+        </div>
+        <ul>
+          <li class="social">
+            <a href="https://twitter.com/KitPepperwig" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social">
+            <a href="https://www.linkedin.com/in/emma-willmann-073bb945/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M0 160h114.496v352H0zM426.368 164.128c-1.216-.384-2.368-.8-3.648-1.152a74.218 74.218 0 00-4.64-.896c-6.08-1.216-12.736-2.08-20.544-2.08-66.752 0-109.088 48.544-123.04 67.296V160H160v352h114.496V320s86.528-120.512 123.04-32v224H512V274.464c0-53.184-36.448-97.504-85.632-110.336z" />
+                <circle cx="56" cy="56" r="56" /></svg>
+            </a>
+          </li>
+          <li class="social">
+            <a href="https://github.com/awillem" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M255.968 5.329C114.624 5.329 0 120.401 0 262.353c0 113.536 73.344 209.856 175.104 243.872 12.8 2.368 17.472-5.568 17.472-12.384 0-6.112-.224-22.272-.352-43.712-71.2 15.52-86.24-34.464-86.24-34.464-11.616-29.696-28.416-37.6-28.416-37.6-23.264-15.936 1.728-15.616 1.728-15.616 25.696 1.824 39.2 26.496 39.2 26.496 22.848 39.264 59.936 27.936 74.528 21.344 2.304-16.608 8.928-27.936 16.256-34.368-56.832-6.496-116.608-28.544-116.608-127.008 0-28.064 9.984-51.008 26.368-68.992-2.656-6.496-11.424-32.64 2.496-68 0 0 21.504-6.912 70.4 26.336 20.416-5.696 42.304-8.544 64.096-8.64 21.728.128 43.648 2.944 64.096 8.672 48.864-33.248 70.336-26.336 70.336-26.336 13.952 35.392 5.184 61.504 2.56 68 16.416 17.984 26.304 40.928 26.304 68.992 0 98.72-59.84 120.448-116.864 126.816 9.184 7.936 17.376 23.616 17.376 47.584 0 34.368-.32 62.08-.32 70.496 0 6.88 4.608 14.88 17.6 12.352C438.72 472.145 512 375.857 512 262.353 512 120.401 397.376 5.329 255.968 5.329z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+
+      </div>
+
+
     </div>
   </main>
 

@@ -310,9 +310,19 @@ main .heading {
   transition: .2s ease-in-out
 }
 
+#training svg.disabled {
+  fill: rgb(125, 125, 125);
+}
+
 #training svg:hover {
   fill: var(--wine);
   transform: scale(1.2);
+}
+
+#training svg.disabled:hover {
+  cursor: default;
+  fill: rgb(125, 125, 125);
+  transform: scale(1)
 }
 
 #training .content div {
@@ -333,6 +343,11 @@ main .heading {
 #training .content>a:hover {
   color: var(--off-white);
   border-bottom: 2px var(--wine) solid;
+}
+
+#about, #contact, #skills, #projects {
+  padding-top: 120px;
+  margin-top: -40px;
 }
 
 .about, .contact {
@@ -449,11 +464,13 @@ main .heading {
 .projects svg.right:hover {
   transform: scale(1.3);
   opacity: .6;
+  cursor: pointer;
 }
 
 .projects svg.left:hover {
   transform: scale(1.3) rotate(180deg);
   opacity: .6;
+  cursor: pointer;
 }
 
 .projects svg.right:active {
@@ -468,27 +485,18 @@ main .heading {
   fill: var(--wine-darker)
 }
 
+.projects svg.disabled:hover {
+  transform: scale(1);
+  cursor: not-allowed;
+  opacity: 1;
+  fill: var(--wine);
+}
+
+.projects svg.left.disabled:hover {
+  transform: scale(1) rotate(180deg);
+}
+
 /* These Media Queries keep the header above the computer monitor at most heights */
-
-@media (max-height: 800px) {
-  header h1 {
-    font-size: 3.8rem;
-    padding: 50px 0 0;
-  }
-  header h3 {
-    font-size: 1.6rem;
-    padding: 15px 20px;
-  }
-}
-
-@media (max-height: 600px) {
-  header h1 {
-    padding: 25px 0 0;
-  }
-  header h3 {
-    padding: 15px 20px;
-  }
-}
 
 @media (min-width: 768px) {
   * {
@@ -520,7 +528,7 @@ main .heading {
     color: white;
     font-size: 5.2rem;
     font-weight: normal;
-    text-shadow: 3px 3px 2px rgba(13, 95, 98, .7)
+    text-shadow: 3px 3px 2px rgba(132, 7, 62, .8)
   }
   header hr {
     width: 335px;
@@ -647,6 +655,30 @@ main .heading {
 @media(min-width: 1200px) {
   .about {
     width: 75%;
+  }
+}
+
+/* These @media are specifically to make sure the header text doesn't over lap the 
+  image when the height is reduced.
+*/
+
+@media (max-height: 800px) {
+  header h1 {
+    font-size: 3.8rem;
+    padding: 50px 0 0;
+  }
+  header h3 {
+    font-size: 1.6rem;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-height: 600px) {
+  header h1 {
+    padding: 25px 0 0;
+  }
+  header h3 {
+    padding: 15px 20px;
   }
 }
 

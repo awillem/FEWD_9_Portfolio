@@ -3,6 +3,9 @@
 const projCards = document.querySelectorAll('#projects .card');
 console.log(projCards)
 const projDiv = document.getElementById('projects');
+const arrowLeft = document.getElementsByClassName('left')[0];
+const arrowRight = document.getElementsByClassName('right')[0];
+
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () { myFunction() };
@@ -31,6 +34,7 @@ function myFunction() {
 window.addEventListener('resize', e => {
   getInnerWidth();
   showProjects();
+  setArrowDisable();
 })
 
 function getInnerWidth() {
@@ -44,6 +48,7 @@ function getInnerWidth() {
 
 getInnerWidth();
 showProjects();
+arrowLeft.classList.add('disabled');
 
 
 
@@ -70,6 +75,7 @@ projDiv.addEventListener('click', e => {
         currentLastIndex = i;
       }
     }
+
     if (e.target.classList.value === "left" || e.target.parentNode.classList.value === "left") {
       if (currentFirstIndex > 0) {
         projCards[currentLastIndex].className = "card hidden-right";
@@ -96,7 +102,27 @@ projDiv.addEventListener('click', e => {
       }
     }
   }
+  setTimeout(() => {
+    setArrowDisable();
+  }, 100);
+
 });
+
+function setArrowDisable() {
+  console.log(projCards[0].classList.contains('visible'))
+  if (projCards[0].classList.contains('visible')) {
+    arrowLeft.classList.add('disabled');
+  } else {
+    arrowLeft.classList.remove('disabled');
+  }
+
+  if (projCards[projCards.length - 1].classList.contains('visible')) {
+    arrowRight.classList.add('disabled');
+  } else {
+    arrowRight.classList.remove('disabled');
+  }
+}
+
 
 // function to set how many cards are visible based on the screen width;
 

@@ -78,8 +78,6 @@ nav h2 {
 }
 
 nav ul {
-  width: 100%;
-  display: inline-block;
   padding: 10px;
   margin-top: 0;
   padding-inline-start: 0;
@@ -575,6 +573,7 @@ main .heading {
   }
   nav h2 {
     margin-bottom: 28.5px;
+    display: inline-block;
   }
   nav ul {
     margin-top: 16px;

@@ -514,7 +514,7 @@ main .heading {
     scroll-behavior: smooth;
   }
   html, body {
-    /* overflow-x: visible; */
+    overflow-x: visible;
   }
   .container {
     width: 90%;

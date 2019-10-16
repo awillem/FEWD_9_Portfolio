@@ -50,6 +50,10 @@ header {
   display: none;
 }
 
+.container {
+  width: 100%;
+}
+
 nav {
   background: linear-gradient(to top, var(--wine), black 95%);
   color: var(--off-white);
@@ -64,15 +68,20 @@ nav div {
 }
 
 nav h2 {
-  display: inline-block;
   font-family: var(--font-script);
   font-size: 2.15em;
   margin-bottom: 10px;
 }
 
 nav ul {
+  width: 100%;
+  display: inline-block;
   padding: 10px;
   margin-top: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  list-style-type: none;
 }
 
 nav li {
@@ -98,7 +107,7 @@ nav li:hover {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 main {

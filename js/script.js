@@ -1,3 +1,9 @@
+// Global Variables
+// All of the project cards, visible or not
+const projCards = document.querySelectorAll('#projects .card');
+console.log(projCards)
+const projDiv = document.getElementById('projects');
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () { myFunction() };
 
@@ -24,6 +30,7 @@ function myFunction() {
 
 window.addEventListener('resize', e => {
   getInnerWidth();
+  showProjects();
 })
 
 function getInnerWidth() {
@@ -36,7 +43,7 @@ function getInnerWidth() {
 }
 
 getInnerWidth();
-
+showProjects();
 
 
 
@@ -44,11 +51,13 @@ getInnerWidth();
   Project Card Tumbler
 */
 
-// All of the project cards, visible or not
-const projCards = document.querySelectorAll('#projects .card');
-console.log(projCards)
-const projDiv = document.getElementById('projects');
 
+
+
+// Lists for clicks on the Project Nav buttons
+// If the right button is clicked, changes the current last item shown
+// to not be visible, and changes the currently invisible item before 
+// the first item shown to be visible, and vice versa.
 projDiv.addEventListener('click', e => {
   if (e.target.tagName === 'svg' || e.target.tagName === 'path') {
     let currentFirstIndex = -1;
@@ -88,4 +97,33 @@ projDiv.addEventListener('click', e => {
     }
   }
 });
+
+// function to set how many cards are visible based on the screen width;
+
+function displayProjects(qty) {
+  for (let i = 0; i < projCards.length; i++) {
+    const card = projCards[i];
+    card.className = 'card';
+    if (i < qty) {
+      card.classList.add('visible');
+    } else {
+      card.classList.add('hidden-right');
+    }
+  }
+}
+
+function showProjects() {
+  if (window.innerWidth <= 768) {
+    displayProjects(1);
+  } else if (window.innerWidth <= 1024) {
+    displayProjects(2);
+  } else {
+    displayProjects(3);
+  }
+}
+
+
+
+
+
 

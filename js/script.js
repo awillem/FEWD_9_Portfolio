@@ -153,3 +153,6 @@ function showProjects() {
 
 
 
+window.addEventListener('mouseover', e => {
+  console.log(e.target);
+})

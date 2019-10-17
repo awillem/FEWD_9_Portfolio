@@ -1,14 +1,14 @@
 // Global Variables
 // All of the project cards, visible or not
 const projCards = document.querySelectorAll('#projects .card');
-console.log(projCards)
+
 const projDiv = document.getElementById('projects');
 const arrowLeft = document.getElementsByClassName('left')[0];
 const arrowRight = document.getElementsByClassName('right')[0];
 
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function () { myFunction() };
+window.onscroll = function () { myFunction(); };
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
@@ -21,7 +21,7 @@ var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.innerWidth > 768) {
     if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
+      navbar.classList.add("sticky");
     } else {
       navbar.classList.remove("sticky");
     }
@@ -35,12 +35,12 @@ window.addEventListener('resize', e => {
   getInnerWidth();
   showProjects();
   setArrowDisable();
-})
+});
 
 function getInnerWidth() {
   console.log(window.innerWidth);
   if (window.innerWidth <= 768) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
@@ -109,7 +109,7 @@ projDiv.addEventListener('click', e => {
 });
 
 function setArrowDisable() {
-  console.log(projCards[0].classList.contains('visible'))
+  console.log(projCards[0].classList.contains('visible'));
   if (projCards[0].classList.contains('visible')) {
     arrowLeft.classList.add('disabled');
   } else {
@@ -151,8 +151,3 @@ function showProjects() {
 
 
 
-
-
-window.addEventListener('mouseover', e => {
-  console.log(e.target);
-})
